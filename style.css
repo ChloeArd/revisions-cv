@@ -51,7 +51,7 @@ a:hover {
 }
 
 #section1 {
-    background-color: #cccccc;
+    background-color: #e7e7e7;
     width: 30%;
     display: flex;
     justify-content: center;
@@ -110,3 +110,91 @@ th, td {
  nav > ul, nav > p {
      font-size: 20px;
  }
+
+ figcaption {
+     font-size: 10px;
+ }
+
+ dd {
+     margin-left: 10px;
+     color: gray;
+ }
+
+ dt::first-letter {
+     color: #216ed3;
+     font-weight: bold;
+ }
+
+ #form, fieldset {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ li:nth-child(2n) {
+     color: #0d4da2;
+ }
+
+ fieldset {
+     border: none;
+ }
+
+ label {
+     font-size: 20px;
+     color: #216ed3; margin: 25px;
+ }
+
+ input, textarea {
+     border: none;
+     border-radius: 10px;
+     padding: 10px;
+     background-color: #eaeaea;
+     width: 500px;
+ }
+
+ a[title] {
+     text-decoration: underline;
+ }
+
+ textarea {
+     height: 200px;
+ }
+
+ .submit {
+     margin: 15px;
+     background-color: #216ed3;
+     color: white;
+     width: 200px;
+ }
+
+ .submit:hover {
+     background-color: #0d4da2;
+ }
+
+@media screen and (max-width: 1000px) {
+    main {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    main {
+        flex-direction: column-reverse;
+    }
+    #section1, .right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    input, textarea {
+        width: 80%;
+    }
+    form {
+        width: 100%;
+    }
+    h1 {
+        font-size: 45px;
+    }
+}
