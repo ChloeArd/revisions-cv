@@ -185,6 +185,12 @@ th, td {
     #section1, .right {
         width: 100%;
     }
+    h3 {
+        font-size: 30px;
+    }
+    li, dt, dd {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 530px) {
